@@ -1,0 +1,101 @@
+.card {
+    display: flex;
+    flex-direction:row;
+    flex-flow:row;
+    /* width: 300px; */
+    align-content: center;
+    justify-content: space-evenly;
+    color: wheat;
+    position: relative;
+    grid-template-columns: max-content;
+    padding: 5px;  
+    
+ }
+
+.card img {
+    
+    opacity: 100%;
+    border-radius: 15%; 
+    position: relative;
+    
+}
+/* .card img:hover {
+    opacity: 100%;
+} */
+
+ .button {
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgb(67, 68, 68);
+    color: rgb(192, 192, 192);
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    
+    
+}
+ .button:hover {
+    background-color: darkslategray;
+    color: wheat;
+    width: 11%;
+    height: 10%;
+}
+
+.name {
+    color: white;
+    position: absolute;
+    bottom:-3px;
+    background-color:black;
+    opacity: 80%;
+    cursor: default;
+    
+}
+.name:hover {
+    opacity: 100%;
+    background-color: darkslategray;
+    color: wheat;
+}
+
+.species {
+    color: white;
+    position: absolute;
+    font-size: medium;
+    top: 50px;
+    left: 4px;
+    background-color: black;
+    opacity: 75%;
+    /* transform: rotate(-90deg); */
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    cursor: default;
+    
+}
+.species:hover {
+    opacity: 100%;
+    background-color: darkslategray;
+    color: wheat;
+}
+
+.gender {
+    display: inline-block;
+    font-size: medium;
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 50%;
+    cursor:default;
+    
+}
+.gender:hover {
+    opacity: 100%;
+    background-color: darkslategray;
+    color: wheat;
+}

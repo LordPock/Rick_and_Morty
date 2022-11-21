@@ -1,0 +1,13 @@
+.cards {
+    display: flex;
+    flex-direction:row;
+    flex-flow: row;
+    width: 100%;
+    align-content: center;
+    justify-content:space-evenly;
+    color: wheat;
+    flex-wrap: wrap;
+    /* position:static; */
+     }
+
+ 

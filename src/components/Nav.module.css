@@ -1,0 +1,16 @@
+.nav {  
+    background-image: url('/public/img/Rick_and_Morty.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100px;
+    /* flex-direction:row;
+    flex-flow: row;
+    width: 100%;
+    align-content: right; */
+    justify-content:flex-end;
+    color: wheat;
+    position: static;
+    align-items: center;
+
+}
