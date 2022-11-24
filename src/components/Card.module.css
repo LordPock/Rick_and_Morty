@@ -19,9 +19,6 @@
     position: relative;
     
 }
-/* .card img:hover {
-    opacity: 100%;
-} */
 
  .button {
     font-weight: bold;
@@ -44,6 +41,7 @@
 }
 
 .name {
+    
     color: white;
     position: absolute;
     bottom:-3px;
@@ -59,11 +57,12 @@
 }
 
 .species {
+    
     color: white;
     position: absolute;
-    font-size: medium;
+    font-size: small;
     top: 50px;
-    left: 4px;
+    left: 9px;
     background-color: black;
     opacity: 75%;
     /* transform: rotate(-90deg); */

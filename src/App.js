@@ -2,8 +2,11 @@ import './App.css'
 import Cards from './components/Cards.jsx'
 import Nav from './components/Nav'
 import React from 'react'
-import {useState, useEffect} from 'react'
-
+import {useState } from 'react'
+import { Routes, Route, Outlet} from 'react-router-dom'
+import About from './components/About'
+import Detail from './components/Detail'
+import Error from './components/404'
 
 
 function App () {
@@ -20,10 +23,8 @@ function App () {
     }
   
     const onClose = (e) => {
-      //let borrar = e.target.parentElement.id
-      //console.log(borrar)
       setCharacters(characters.filter(data => data.id !== e))
-      }
+    }
 
     const agregar = (e) => {
       fetch(`https://rickandmortyapi.com/api/character/${e}`)
@@ -45,14 +46,13 @@ function App () {
         }
         
         
-    const OnSearch = () => {
-      const id = document.querySelector('#input').value
-      if (!searchCard(id)) {
+    const OnSearch = (valor) => {
+      if (!searchCard(valor)) {
       return window.alert('Ya existe ese personaje');
       } else { 
-        agregar(id)
+        agregar(valor)
       }
-      
+      agregar(valor)
     }
 
     const random = () => {
@@ -71,21 +71,18 @@ function App () {
   return (
     
     <div className='App' style={{ padding: '25px' }}>
-      <div>
         <Nav
-        //  onSearch={(characterID) => window.alert(characterID)}
         OnSearch={OnSearch}
         random={random}
         />
-      </div>
+        <Routes>
+        <Route path='/' element={<Cards characters={characters} onClose={onClose}/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/detail/:detailId' element={<Detail/>}/>
+        <Route path=':404' element={<Error />}/>
+      </Routes>
       
-      <div className='Cards'>
-        <Cards
-          characters={characters}
-          onClose={onClose}
-        />
-      </div>
-      
+     <Outlet/>
     </div>
   )
 }
