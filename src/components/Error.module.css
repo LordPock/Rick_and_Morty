@@ -1,14 +1,34 @@
 
 .diverror {
-    background-image: url("/public/img/error.png");
-    /* background-color: darkslategray; */
-    background-repeat: no-repeat;
-    height: 350px;
     display: flex;
-    justify-content: flex-end;
-    width: 40%;
+    justify-content: center;
+    margin-top: 25px;  
+    
+}
+
+.div {
+    background-image: url(/public/img/error.png);  
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 650px;
+    width: 30%;
+}
+
+.datos {
+    background-color: rgb(23,33,42);
+    width: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 50px;
+
 }
 
 .error {
-    color: wheat;
+    color: rgb(140,244,44);
+}
+
+.p {
+    color: white;
 }

@@ -16,7 +16,8 @@
 
 .home {
     font-size: small;
-    color: rgb(140,244,44);    
+    color: rgb(140,244,44); 
+    margin: 5px;   
 }
 .home:hover {
     font-weight: bolder;

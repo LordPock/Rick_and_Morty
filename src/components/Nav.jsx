@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import styles from './Nav.module.css'
 import SearchBar from './SearchBar'
 
 
 export default function Nav(props) {
-    
+   const location = useLocation()
+   console.log(location.pathname)
     return (
         
        <div className={styles.nav}>
@@ -16,9 +17,10 @@ export default function Nav(props) {
             About
          </NavLink>
          </div>
+         {location.pathname === '/home' ? 
         <SearchBar 
         OnSearch={props.OnSearch}
-        random={props.random}/>
+        random={props.random}/> : null}
        </div>
        
     );
