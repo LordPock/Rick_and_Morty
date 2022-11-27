@@ -7,7 +7,7 @@
     flex-direction:row;
     flex-flow: column;
     align-items: flex-end;
-    justify-content:flex-end;
+    justify-content:flex-start;
     color: wheat;
     position: static;
     /* align-items: center; */
@@ -17,7 +17,7 @@
 .home {
     font-size: small;
     color: rgb(140,244,44); 
-    margin: 5px;   
+    margin: px;   
 }
 .home:hover {
     font-weight: bolder;

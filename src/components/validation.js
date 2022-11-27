@@ -1,5 +1,5 @@
 const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-const regexPassword = /^(?=.*\d)(?=.*[a-zA-Z]).{6,10}$/gm
+const regexPassword = /^(?=.*\d).{6,10}$/m
 export default function validation (userData) { 
     var errors = {};
     if (!userData.username) errors.username = 'El campo no puede estar vacío';

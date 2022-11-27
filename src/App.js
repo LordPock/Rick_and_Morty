@@ -75,9 +75,10 @@ function App () {
     const navigate = useNavigate()
     const location = useLocation()
   
-  //   useEffect(() => {
-  //     !access && navigate('/');
-  //  }, [access]);
+    useEffect(() => {
+      !access && navigate('/');
+      // eslint-disable-next-line
+   }, [access]);
 
     if(location.pathname === '/') {
       return (
