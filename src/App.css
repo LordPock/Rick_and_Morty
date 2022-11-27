@@ -3,3 +3,9 @@
    text-align: center;
   
 }
+
+
+.form {
+   display: flex;
+   justify-items: center;
+}

@@ -1,12 +1,20 @@
 .about {
-    background: darkslategray;
-    
+    margin-top: 15px;
+    display: flex;
     color: wheat;
-    
+    flex-direction: column;
+    align-items: center;
+}
+
+.about2 {
+    width: 50%;
+    background-color:  rgb(23, 33, 42);
 }
 
 .h2 {
-    opacity: 100%;
+    color: rgb(140,244,44);
+    font-family: "Get Schwifty", TrueType;
+    font-size: xx-large;
 }
 
 .span {

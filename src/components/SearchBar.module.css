@@ -1,14 +1,32 @@
 
 .input {
     margin: 15px;
-    background-color: rgb(67, 68, 68);
-    color: wheat;
+    background-color: rgb(23, 33, 42);
+    color: rgb(140,244,44);
     height:min-content;
     font-weight: bold ;
-
 }
 
+
 .button {
+    font-weight: bolder;
+    border-radius: 10%;
+    background-color: rgb(140,244,44);
+    color: rgb(0, 0, 0);
+    width: 70px;
+    margin-right: 5px;
+}
+  .button:hover {
+    background-color: rgb(23, 33, 42);
+    color: rgb(140,244,44);
+    
+    box-shadow: 1px 1px rgb(255, 255, 255);
+  }
+  .button:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+  }
+
+/* .button {
     font-weight: bold;
     border-radius: 50%;
     background-color: rgb(67, 68, 68);
@@ -18,7 +36,7 @@
 .button:hover {
     background-color: darkslategray;
     color: wheat;
-}
+} */
 
 /* .fondo {
     display: flex;

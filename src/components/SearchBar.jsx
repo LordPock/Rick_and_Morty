@@ -10,7 +10,7 @@ export default function SearchBar(props) {
    }
    return (
       <div>
-         <input id='input' className={styles.input} type='search' onChange={HandleChange} />
+         <input id='input' className={styles.input} type='search' onChange={HandleChange} placeholder='Ingresa un ID' />
       <button className={styles.button} onClick={()=> props.OnSearch(character)}>Agregar</button>
       <button className={styles.button} onClick={props.random}>Random</button>
       </div>

@@ -4,13 +4,27 @@
     background-repeat: no-repeat;
     display: flex;
     height: 100px;
-    /* flex-direction:row;
-    flex-flow: row;
-    width: 100%;
-    align-content: right; */
+    flex-direction:row;
+    flex-flow: column;
+    align-items: flex-end;
     justify-content:flex-end;
     color: wheat;
     position: static;
-    align-items: center;
+    /* align-items: center; */
 
+}
+
+.home {
+    font-size: small;
+    color: rgb(140,244,44);    
+}
+.home:hover {
+    font-weight: bolder;
+}
+
+.isActive {
+    font-weight: bolder;
+    /* background-color: rgb(23, 33, 42); */
+    color: rgb(140,244,44);
+    padding: 5px;
 }

@@ -1,0 +1,49 @@
+.warning {
+    border: solid red 1px;
+    border-radius: 0.2em;  
+    background-color: rgb(248, 170, 170);  
+}
+.warning:focus {
+    background-color: white;
+}
+  
+.danger {
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+    margin-left: 10em;
+}
+
+.login {
+   display: flex;
+   align-content:flex-end;
+   justify-content:space-around;
+   flex-flow: row;
+   flex-direction: row;
+   flex-wrap: wrap;
+   color: rgb(140,244,44);
+   font-weight: bold;
+}
+
+.login2 {
+  background-color: rgb(23, 33, 42);
+  width: 500px;
+  text-align: right;
+}
+
+.button {
+  font-weight: bolder;
+  border-radius: 10%;
+  background-color: rgb(140,244,44);
+  color: rgb(0, 0, 0);
+  width: 150px;
+  margin-top: 5px;
+}
+.button:hover {
+  background-color: rgb(23, 33, 42);
+  color: rgb(140,244,44);
+  
+  box-shadow: 1px 1px rgb(255, 255, 255);
+}
+.button:active {
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}

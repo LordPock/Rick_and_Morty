@@ -1,3 +1,71 @@
+/* @keyframes opening {
+    0% {background-image: url("/public/img/back.png"); opacity: 100%; background-repeat: no-repeat; background-size: contain;}
+    12.5% {background-image: url("/public/img/back.png"); opacity: 93.75%; background-repeat: no-repeat; background-size: contain;}
+    25% {background-image: url("/public/img/back.png"); opacity: 87.5%; background-repeat: no-repeat; background-size: contain;}
+    37.5% {background-image: url("/public/img/back.png"); opacity: 81.25%; background-repeat: no-repeat; background-size: contain;}
+    50% {background-image: url("/public/img/back.png"); opacity: 75%; background-repeat: no-repeat; background-size: contain;}
+    62.5% {background-image: url("/public/img/back.png"); opacity: 68.75%; background-repeat: no-repeat; background-size: contain;}
+    75% {background-image: url("/public/img/back.png"); opacity: 62.5%; background-repeat: no-repeat; background-size: contain;}
+    87.5% {background-image: url("/public/img/back.png"); opacity: 56.25%; background-repeat: no-repeat; background-size: contain;}
+    100% {background-image: url("/public/img/back.png"); opacity: 50%; background-repeat: no-repeat; background-size: contain;}
+    75% {background-image: url("/public/img/back.png"); opacity: 50%;}
+    100% {background-image: url("/public/img/back.png"); opacity: 100%;}
+} */
+
 .div {
-    background-color: lightslategray;
+    /* animation-fill-mode: forwards; */
+    /* animation-name: opening;
+    animation-duration: 0.8s;
+     */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;    
 }
+
+.detail {
+  /* visibility: hidden; */
+  background-color: rgb(23,33,42);
+  width: 30%;
+  height: 250px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.detail2 {
+    opacity: 100%;
+    color: white;
+    text-align: left;
+    margin-left: 25px;
+    align-content: center;
+    height: 220px;
+}
+
+.nombre {
+    color: rgb(140,244,44);
+}
+
+.img {
+    height: 250px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.button {
+    font-weight: bolder;
+    border-radius: 10%;
+    background-color: rgb(140,244,44);
+    color: rgb(0, 0, 0);
+    width: 250px;
+    margin-top: 15px;
+    position: absolute;
+    left: 1115px;
+}
+  .button:hover {
+    background-color: rgb(23, 33, 42);
+    color: rgb(140,244,44);
+    
+    box-shadow: 1px 1px rgb(255, 255, 255);
+  }
+  .button:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+  }

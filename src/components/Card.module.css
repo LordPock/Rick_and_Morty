@@ -1,3 +1,28 @@
+/* @keyframes opening {
+    0% {background-image: url("/public/img/back.png"); opacity: 0%;}
+    50% {background-image: url("/public/img/back.png"); opacity: 50%;}
+    100% {background-image: url("/public/img/back.png"); opacity: 100%;}
+    75% {background-image: url("/public/img/back.png"); opacity: 50%;}
+    100% {background-image: url("/public/img/back.png"); opacity: 100%;}
+} */
+.div {
+    padding: none;
+    margin: none;
+    background-color: rgb(23, 33, 42);;
+    height: 241px;
+    margin-top: 20px;
+    text-align: center;
+}
+.div:hover img {
+    bottom: 20px;
+}
+.div:hover .id {
+    opacity: 100%;
+}
+.div:hover .button {
+    top: -15px;
+}
+
 .card {
     display: flex;
     flex-direction:row;
@@ -8,93 +33,69 @@
     color: wheat;
     position: relative;
     grid-template-columns: max-content;
-    padding: 5px;  
-    
- }
+    /* padding: 5px;   */
+    /* animation-name: opening;
+    animation-duration: 3s; */
+    /* background-color: rgb(140,244,44); */
+}
 
 .card img {
-    
     opacity: 100%;
-    border-radius: 15%; 
+    border-bottom-left-radius: 15%; 
+    border-bottom-right-radius: 15%; 
     position: relative;
-    
+    width: 200px;
+    ;
 }
 
  .button {
     font-weight: bold;
     border-radius: 50%;
-    background-color: rgb(67, 68, 68);
-    color: rgb(192, 192, 192);
+    background-color: rgb(23, 33, 42);
+    color: rgb(140,244,44);
     position: absolute;
-    bottom: 17px;
-    left: 15px;
+    top: 5px;
+    left: 5px;
     width: 30px;
     height: 30px;
-    
-    
 }
  .button:hover {
-    background-color: darkslategray;
-    color: wheat;
-    width: 11%;
-    height: 10%;
+    background-color:rgb(140,244,44);
+    color: rgb(23,33,42);
 }
 
 .name {
-    
+    font-size: medium;
     color: white;
     position: absolute;
-    bottom:-3px;
-    background-color:black;
-    opacity: 80%;
+    bottom: -28px;
+    left: 0px;
+    background-color:rgb(23, 33, 42);
     cursor: default;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    
     
 }
 .name:hover {
     opacity: 100%;
-    background-color: darkslategray;
-    color: wheat;
+    color: rgb(140,244,44);
+    font-size: large;
 }
 
-.species {
-    
-    color: white;
+.id {
+    opacity: 0%;
     position: absolute;
     font-size: small;
-    top: 50px;
-    left: 9px;
-    background-color: black;
-    opacity: 75%;
-    /* transform: rotate(-90deg); */
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    cursor: default;
-    
-}
-.species:hover {
-    opacity: 100%;
-    background-color: darkslategray;
-    color: wheat;
-}
-
-.gender {
-    display: inline-block;
-    font-size: medium;
-    width: 25px;
-    height: 25px;
-    align-content: center;
     color: white;
     position: absolute;
-    top: 5px;
-    left: 15px;
-    background-color: black;
-    opacity: 80%;
-    border-radius: 50%;
-    cursor:default;
-    
-}
-.gender:hover {
-    opacity: 100%;
-    background-color: darkslategray;
-    color: wheat;
+    bottom: -10px;
+    left: 0px;
+    background-color:rgb(23, 33, 42);
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
 }

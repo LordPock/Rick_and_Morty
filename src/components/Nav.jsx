@@ -8,12 +8,14 @@ export default function Nav(props) {
     return (
         
        <div className={styles.nav}>
-         <NavLink to={'/'}>
+         <div>
+         <NavLink to={'/home'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
             Home
          </NavLink>
-         <NavLink to={'/about'}>
+         <NavLink to={'/about'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
             About
          </NavLink>
+         </div>
         <SearchBar 
         OnSearch={props.OnSearch}
         random={props.random}/>

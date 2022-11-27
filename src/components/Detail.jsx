@@ -6,14 +6,7 @@ import styles from './Detail.module.css';
 
 export default function Detail(props) {
    const { detailId } = useParams()
-   const [character, setCharacter] = useState({
-      name: "",
-      status: "",
-      species: "",
-      gender: "",
-      origin: "",
-      image: "",
-   });
+   const [character, setCharacter] = useState({});
 
    useEffect(() => {
       fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
@@ -21,14 +14,7 @@ export default function Detail(props) {
          .then((char) => {
             if (char.name) {
                
-               setCharacter({...character,
-                  name: char.name,
-                  status: char.status,
-                  species: char.species,
-                  gender: char.gender,
-                  origin: char.origin.name,
-                  image: char.image
-               });
+               setCharacter(char);
                
             } else {
                window.alert('No hay personajes con ese ID');
@@ -45,15 +31,22 @@ export default function Detail(props) {
    return (
       
       <div className={styles.div}>
-         <h2 className={styles.nombre}>Nombre: {character.name}</h2>
-         <h3 className={styles.default}>Status: {character.status}</h3>
-         <h3 className={styles.default}>Especie: {character.species}</h3>
-         <h3 className={styles.default}>Género: {character.gender}</h3>
-         <h3 className={styles.default}>Origen: {character.origin}</h3>
-         <img src={character.image} alt='No encontrado' />
-         <Link to={'/'}>
-            <button className={styles.button}>Volver</button>
-         </Link>
+         <div className={styles.detail}>
+            <div className={styles.detail2}>
+               <h2 className={styles.nombre}>Nombre: {character.name}</h2>
+               <h3 className={styles.default}>Status: {character.status}</h3>
+               <h3 className={styles.default}>Especie: {character.species}</h3>
+               <h3 className={styles.default}>Género: {character.gender}</h3>
+               <h3 className={styles.default}>Origen: {character.origin?.name}</h3>
+               <Link to={'/home'}>
+               <button className={styles.button}>Volver</button>
+               </Link>
+            </div>
+         </div>
+         <div>
+         <img src={character.image} alt='No encontrado' className={styles.img}/>
+         
+         </div>
       </div>
    
    )  

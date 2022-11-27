@@ -6,10 +6,16 @@ export default function About() {
    
     return (
        <div className={styles.about}>
-            <h2 className={styles.h2}>Pocket</h2>
+         <div className={styles.about2}>
+            <h2 className={styles.h2}>Rick and Morty</h2>
             <hr/>
-            <span className={styles.span}>Hola, esto es una prueba, interesante lo que se puede lograr</span>
-            <Outlet/>
+            <p className={styles.span}>Hola, mi nombre es Claudio, y esta SPA fue realizada como parte del M2 del bootcamp de HENRY.</p>
+            
+            <p className={styles.span}>Para el desarrollo utilice Javascript, React, React-Router-dom y mucho amor ♥.</p>
+            
+            
+         </div>
+         <Outlet/>
        </div>
        
     );
