@@ -25,27 +25,3 @@
   .button:active {
     box-shadow: 2px 2px rgb(0, 0, 0);
   }
-
-/* .button {
-    font-weight: bold;
-    border-radius: 50%;
-    background-color: rgb(67, 68, 68);
-    color: rgb(192, 192, 192);
-    height: 50%;
-}
-.button:hover {
-    background-color: darkslategray;
-    color: wheat;
-} */
-
-/* .fondo {
-    display: flex;
-    flex-direction: column;
-    flex-flow: row;
-    width: 100%;
-    align-content: right;
-    justify-content:flex-start;
-    color: wheat;
-    position: static;
-
-} */

@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;  
-    
 }
 
 .div {
@@ -22,7 +21,6 @@
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-top: 50px;
-
 }
 
 .error {

@@ -5,7 +5,7 @@ import SearchBar from './SearchBar'
 
 export default function Nav(props) {
    const location = useLocation()
-   console.log(location.pathname)
+   
     return (
         
        <div className={styles.nav}>

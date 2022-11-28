@@ -10,14 +10,12 @@
     justify-content:flex-start;
     color: wheat;
     position: static;
-    /* align-items: center; */
-
 }
 
 .home {
     font-size: small;
     color: rgb(140,244,44); 
-    margin: px;   
+    margin: 5px;   
 }
 .home:hover {
     font-weight: bolder;
@@ -25,7 +23,6 @@
 
 .isActive {
     font-weight: bolder;
-    /* background-color: rgb(23, 33, 42); */
     color: rgb(140,244,44);
     padding: 5px;
 }
