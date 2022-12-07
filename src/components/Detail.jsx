@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-//import Card from './Card';
 import styles from './Detail.module.css';
-
 
 export default function Detail() { 
    
@@ -24,9 +22,7 @@ export default function Detail() {
          });
       return setCharacter({});
    }, [detailId]);
-   
-   
-   
+    
    return (
       
       <div className={styles.div}>

@@ -2,10 +2,13 @@
 .div {
     padding: none;
     margin: none;
-    background-color: rgb(23, 33, 42);;
+    background: rgb(140,244,44);
     height: 241px;
     margin-top: 30px;
     text-align: center;
+    color: black;
+    transition: background 1.5s, color 1.5s;
+    border-radius: 25px;
 }
 .div:hover img {
     bottom: 20px;
@@ -16,6 +19,14 @@
 .div:hover .button {
     top: -15px;
 }
+.div:hover .fav {
+    bottom: 20px;
+}
+.div:hover {
+    transition: background 1.5s, color 1.5s;
+   background: rgb(23, 33, 42);
+   color: white;
+}
 
 .card {
     display: flex;
@@ -23,15 +34,13 @@
     flex-flow:row;
     align-content: center;
     justify-content: space-evenly;
-    color: wheat;
     position: relative;
     grid-template-columns: max-content;
 }
 
 .card img {
     opacity: 100%;
-    border-bottom-left-radius: 15%; 
-    border-bottom-right-radius: 15%; 
+    border-radius: 25px;
     position: relative;
     width: 200px;
     ;
@@ -55,15 +64,16 @@
 
 .name {
     font-size: medium;
-    color: white;
+    /* color: black; */
     position: absolute;
     bottom: -28px;
     left: 0px;
-    background-color:rgb(23, 33, 42);
+    /* background-color:rgb(23, 33, 42); */
     cursor: default;
     text-align: center;
     width: 100%;
     justify-content: center;
+    
 }
 .name:hover {
     opacity: 100%;
@@ -75,13 +85,26 @@
     opacity: 0%;
     position: absolute;
     font-size: small;
-    color: white;
+    /* color: white; */
     position: absolute;
     bottom: -10px;
     left: 0px;
-    background-color:rgb(23, 33, 42);
+    /* background-color:rgb(23, 33, 42); */
     cursor: default;
     text-align: center;
     width: 100%;
     justify-content: center;
+}
+
+.fav {
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0px;
+    right: -8px;
+    /* width: 30px;
+    height: 30px; */
+    border-color: transparent;
 }

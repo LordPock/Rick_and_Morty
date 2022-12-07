@@ -8,8 +8,11 @@
     flex-flow: column;
     align-items: flex-end;
     justify-content:flex-start;
-    color: wheat;
+    
     position: static;
+    font-size: small;
+    color: rgb(140,244,44); 
+    margin: 5px;   
 }
 
 .home {

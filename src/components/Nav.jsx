@@ -10,14 +10,17 @@ export default function Nav(props) {
         
        <div className={styles.nav}>
          <div>
-         <NavLink to={'/home'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
-            Home
-         </NavLink>
-         <NavLink to={'/about'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
-            About
-         </NavLink>
+            <NavLink to={'/home'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
+               Home
+            </NavLink>
+            <NavLink to={'/about'} className={({isActive}) => isActive ? styles.isActive : styles.home}>
+               About
+            </NavLink>
+            <NavLink to={'/'} className={({isActive}) => isActive ? styles.isActive : styles.home} onClick={props.logout}>
+               Logout
+            </NavLink>
          </div>
-         {location.pathname === '/home' ? 
+         {location.pathname === '/home' || '/Fav' ? 
         <SearchBar 
         OnSearch={props.OnSearch}
         random={props.random}/> : null}

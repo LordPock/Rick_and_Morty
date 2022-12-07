@@ -8,6 +8,7 @@ import About from './components/About'
 import Detail from './components/Detail'
 import Error from './components/Error'
 import Form from './components/Form'
+import {Favorites} from './components/Favorites'
 
 function App () {
   
@@ -72,6 +73,10 @@ function App () {
     }
     }
 
+    function logout () {
+      setAccess(false);
+    }
+
     const navigate = useNavigate()
     const location = useLocation()
   
@@ -96,6 +101,7 @@ function App () {
         <Nav 
         OnSearch={OnSearch}
         random={random}
+        logout={logout}
         />
         <Routes>
         <Route path='/' element={<Form />} />
@@ -103,6 +109,7 @@ function App () {
         <Route path='/about' element={<About/>}/>
         <Route path='/detail/:detailId' element={<Detail/>}/>
         <Route path=':404' element={<Error />}/>
+        <Route path='/Fav' element ={<Favorites onClose={onClose}/>}/>
       </Routes>
       
      <Outlet/>
