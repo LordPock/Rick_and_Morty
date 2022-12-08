@@ -18,7 +18,11 @@ function Favorites({ myFavorites }) {
   return (
     <div className={styles.cards}>
       <div className={styles.favs}>
-        <select className={styles.select} onChange={handleSort} defaultValue="Ascendente">
+        <select
+          className={styles.select}
+          onChange={handleSort}
+          defaultValue="Ascendente"
+        >
           <option value="Ascendente">Ascendente</option>
           <option value="Descendente">Descendente</option>
         </select>
