@@ -9,9 +9,12 @@ import Detail from './components/Detail/Detail'
 import Error from './components/Error/Error'
 import Form from './components/Form/Form'
 import Favorites from './components/Favorites/Favorites'
+import { useDispatch } from 'react-redux'
+import { deleteFavorite } from './redux/actions'
 
 function App () {
-  
+ 
+  const dispatch = useDispatch()
   const [characters, setCharacters] = useState([]);
 
   const searchCard = (props) => {
@@ -25,6 +28,7 @@ function App () {
   
     const onClose = (e) => {
       setCharacters(characters.filter(data => data.id !== e))
+      dispatch(deleteFavorite(e))
     }
 
     const agregar = (e) => {

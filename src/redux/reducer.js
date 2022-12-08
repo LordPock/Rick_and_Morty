@@ -10,7 +10,8 @@ export default function reducerfav(state = initialState, action) {
             console.log(all)
             return {...state, allCharacters: [...all].sort((a,b) => a.id - b.id), myFavorites: [...all].sort((a,b) => a.id - b.id)}
         case 'DELETE_FAVORITE':
-            return {...state, allCharacters: state.allCharacters.filter(idx => idx.id !== action.payload)}
+            const borrar = state.allCharacters.filter(idx => idx.id !== action.payload)
+            return {...state, allCharacters: borrar, myFavorites: borrar}
         case 'FILTER':
             if(action.payload !== 'All') {
                 return {...state, myFavorites: state.allCharacters.filter(idx => idx.gender === action.payload)}
