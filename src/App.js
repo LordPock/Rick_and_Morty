@@ -8,7 +8,7 @@ import About from './components/About'
 import Detail from './components/Detail'
 import Error from './components/Error'
 import Form from './components/Form'
-import {Favorites} from './components/Favorites'
+import Favorites from './components/Favorites'
 
 function App () {
   
@@ -50,7 +50,7 @@ function App () {
     }
 
     const random = () => {
-      const id = Math.floor(Math.random()* 827)
+      const id = Math.ceil(Math.random()* 826)
       if (!searchCard(id)) {
       random();
       } else { 
@@ -109,7 +109,7 @@ function App () {
         <Route path='/about' element={<About/>}/>
         <Route path='/detail/:detailId' element={<Detail/>}/>
         <Route path=':404' element={<Error />}/>
-        <Route path='/Fav' element ={<Favorites onClose={onClose}/>}/>
+        <Route path='/Favorites' element ={<Favorites />}/>
       </Routes>
       
      <Outlet/>

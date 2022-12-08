@@ -4,7 +4,7 @@
     margin: none;
     background: rgb(140,244,44);
     height: 241px;
-    margin-top: 30px;
+    margin: 30px;
     text-align: center;
     color: black;
     transition: background 1.5s, color 1.5s;
@@ -63,10 +63,10 @@
 }
 
 .name {
-    font-size: medium;
+    font-size: small;
     /* color: black; */
     position: absolute;
-    bottom: -28px;
+    bottom: -25px;
     left: 0px;
     /* background-color:rgb(23, 33, 42); */
     cursor: default;
@@ -78,7 +78,7 @@
 .name:hover {
     opacity: 100%;
     color: rgb(140,244,44);
-    font-size: large;
+    font-size: medium;
 }
 
 .id {

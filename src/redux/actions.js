@@ -12,3 +12,17 @@ export function deleteFavorite(id) {
         payload: id
     }
 }
+
+export function filterCards(status) {
+    return {
+        type: 'FILTER',
+        payload: status
+    }
+}
+
+export function orderCards(id) {
+    return {
+        type: 'ORDER',
+        payload: id
+    }
+}

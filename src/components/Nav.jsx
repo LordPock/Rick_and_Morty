@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import styles from './Nav.module.css'
 import SearchBar from './SearchBar'
 
@@ -20,10 +20,12 @@ export default function Nav(props) {
                Logout
             </NavLink>
          </div>
-         {location.pathname === '/home' || '/Fav' ? 
+         {location.pathname === '/home' ? 
         <SearchBar 
         OnSearch={props.OnSearch}
-        random={props.random}/> : null}
+        random={props.random}/> : 
+        <Link to={'/home'}><button className={styles.button}>Volver</button>
+        </Link> }
        </div>
        
     );

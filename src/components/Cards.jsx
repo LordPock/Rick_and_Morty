@@ -14,6 +14,7 @@ export default function Cards(props) {
             name={c.name}
             image={c.image}
             onClose={props.onClose}
+            gender={c.gender}
           />
          )}
       </div>

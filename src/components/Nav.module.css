@@ -29,3 +29,23 @@
     color: rgb(140,244,44);
     padding: 5px;
 }
+
+
+.button {
+    margin-top: 18px;
+    font-weight: bolder;
+    border-radius: 10%;
+    background-color: rgb(140,244,44);
+    color: rgb(0, 0, 0);
+    width: 75px;
+    margin-right: 5px;
+}
+  .button:hover {
+    background-color: rgb(23, 33, 42);
+    color: rgb(140,244,44);
+    
+    box-shadow: 1px 1px rgb(255, 255, 255);
+  }
+  .button:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+  }
