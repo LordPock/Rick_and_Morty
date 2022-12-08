@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
 import styles from "./Favorites.module.css";
 import { connect, useDispatch } from "react-redux";
-import { filterCards, orderCards } from "../redux/actions";
+import { filterCards, orderCards } from "../../redux/actions";
 
 function Favorites({ myFavorites }) {
   const dispatch = useDispatch();

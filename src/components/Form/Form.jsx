@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Form.module.css'
-import validation from './validation'
+import validation from '../validation'
 
 export default function Form (props) {
     

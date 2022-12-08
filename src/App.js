@@ -1,14 +1,14 @@
 import styles from './App.css'
-import Cards from './components/Cards.jsx'
-import Nav from './components/Nav'
+import Cards from './components/Cards/Cards'
+import Nav from './components/Nav/Nav'
 import React from 'react'
 import {useState, useEffect} from 'react'
 import { Routes, Route, Outlet, useLocation, useNavigate} from 'react-router-dom'
-import About from './components/About'
-import Detail from './components/Detail'
-import Error from './components/Error'
-import Form from './components/Form'
-import Favorites from './components/Favorites'
+import About from './components/About/About'
+import Detail from './components/Detail/Detail'
+import Error from './components/Error/Error'
+import Form from './components/Form/Form'
+import Favorites from './components/Favorites/Favorites'
 
 function App () {
   
@@ -45,8 +45,9 @@ function App () {
       return window.alert('Ya existe ese personaje');
       } else { 
         agregar(valor)
+        document.getElementById('input').value = ''
       }
-      agregar(valor)
+      // agregar(valor)
     }
 
     const random = () => {

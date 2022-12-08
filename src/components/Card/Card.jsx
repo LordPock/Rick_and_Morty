@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import styles from './Card.module.css';
-import { addFavorite, deleteFavorite } from '../redux/actions'
+import { addFavorite, deleteFavorite } from '../../redux/actions'
 import { connect } from 'react-redux';
 import { useState, useEffect } from 'react';
 
