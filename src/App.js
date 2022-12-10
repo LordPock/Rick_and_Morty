@@ -51,7 +51,7 @@ function App () {
         agregar(valor)
         document.getElementById('input').value = ''
       }
-      // agregar(valor)
+
     }
 
     const random = () => {
